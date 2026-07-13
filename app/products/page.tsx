@@ -6,6 +6,7 @@ import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 
 
+
 interface Product {
   id: number;
   sku: string;
@@ -46,6 +47,8 @@ export default function ProductsPage() {
     router.push("/");
 
   };
+
+  
 
   const getProducts = async () => {
 
@@ -271,8 +274,13 @@ export default function ProductsPage() {
 
 
         </select>
-
-
+          <button
+            onClick={() =>
+            router.push(`/edit`)}
+            className="bg-yellow-500 text-white px-3 py-1 rounded">
+            Editar
+          </button>
+         
       </div>
 
 
