@@ -45,7 +45,7 @@ export default function Home() {
 
     // Espera 1.5 segundos para mostrar el mensaje
     setTimeout(() => {
-      router.push("/dashboard");
+      router.push("/products");
     }, 1500);
 
 }
